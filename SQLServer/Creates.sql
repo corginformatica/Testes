@@ -1,3 +1,10 @@
+ALTER TABLE [dbo].[tbClienteFinanciamento] DROP CONSTRAINT [FK_tbClienteFinanciamento_tbFinanciamento]
+GO
+ALTER TABLE [dbo].[tbClienteFinanciamento] DROP CONSTRAINT [FK_tbClienteFinanciamento_tbCliente]
+GO
+ALTER TABLE [dbo].[tbFinanciamentoParcela] DROP CONSTRAINT [FK_tbFinanciamentoParcela_tbClienteFinanciamento]
+GO
+
 /****** tbCliente ******/
 DROP TABLE [dbo].[tbCliente]
 GO
@@ -12,7 +19,11 @@ CREATE TABLE [dbo].[tbCliente](
 	[IdCliente] [int] IDENTITY(1,1) NOT NULL,
 	[Nome] [varchar](100) NOT NULL,
 	[UF] [varchar](2) NOT NULL,
-	[Celular] [varchar](15) NOT NULL
+	[Celular] [varchar](15) NOT NULL,
+ CONSTRAINT [PK_tbCliente] PRIMARY KEY CLUSTERED 
+(
+	[IdCliente] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
 
@@ -31,14 +42,15 @@ CREATE TABLE [dbo].[tbFinanciamento](
 	[TipoFinanciamento] [varchar](50) NOT NULL,
 	[Taxa] [float] NOT NULL,
 	[Periodo] [varchar](3) NOT NULL,
-	[TipoPessoa] [varchar](2) NOT NULL
+	[TipoPessoa] [varchar](2) NOT NULL,
+ CONSTRAINT [PK_tbFinanciamento] PRIMARY KEY CLUSTERED 
+(
+	[IdFinanciamento] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
 
 /****** tbClienteFinanciamento ******/
-
-ALTER TABLE [dbo].[tbFinanciamentoParcela] DROP CONSTRAINT [FK_tbFinanciamentoParcela_tbClienteFinanciamento]
-GO
 
 DROP TABLE [dbo].[tbClienteFinanciamento]
 GO
@@ -61,6 +73,20 @@ CREATE TABLE [dbo].[tbClienteFinanciamento](
 	[IdClienteFinanciamento] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[tbClienteFinanciamento]  WITH CHECK ADD  CONSTRAINT [FK_tbClienteFinanciamento_tbCliente] FOREIGN KEY([IdCliente])
+REFERENCES [dbo].[tbCliente] ([IdCliente])
+GO
+
+ALTER TABLE [dbo].[tbClienteFinanciamento] CHECK CONSTRAINT [FK_tbClienteFinanciamento_tbCliente]
+GO
+
+ALTER TABLE [dbo].[tbClienteFinanciamento]  WITH CHECK ADD  CONSTRAINT [FK_tbClienteFinanciamento_tbFinanciamento] FOREIGN KEY([IdFinanciamento])
+REFERENCES [dbo].[tbFinanciamento] ([IdFinanciamento])
+GO
+
+ALTER TABLE [dbo].[tbClienteFinanciamento] CHECK CONSTRAINT [FK_tbClienteFinanciamento_tbFinanciamento]
 GO
 
 /****** tbFinanciamentoParcela] ******/
