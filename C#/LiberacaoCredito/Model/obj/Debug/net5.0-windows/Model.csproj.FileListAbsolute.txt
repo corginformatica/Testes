@@ -1,0 +1,12 @@
+E:\OneDrive\_Projetos\Testes\LiberacaoCredito\Model\bin\Debug\net5.0-windows\Model.deps.json
+E:\OneDrive\_Projetos\Testes\LiberacaoCredito\Model\bin\Debug\net5.0-windows\Model.dll
+E:\OneDrive\_Projetos\Testes\LiberacaoCredito\Model\bin\Debug\net5.0-windows\ref\Model.dll
+E:\OneDrive\_Projetos\Testes\LiberacaoCredito\Model\bin\Debug\net5.0-windows\Model.pdb
+E:\OneDrive\_Projetos\Testes\LiberacaoCredito\Model\obj\Debug\net5.0-windows\Model.csproj.AssemblyReference.cache
+E:\OneDrive\_Projetos\Testes\LiberacaoCredito\Model\obj\Debug\net5.0-windows\Model.GeneratedMSBuildEditorConfig.editorconfig
+E:\OneDrive\_Projetos\Testes\LiberacaoCredito\Model\obj\Debug\net5.0-windows\Model.AssemblyInfoInputs.cache
+E:\OneDrive\_Projetos\Testes\LiberacaoCredito\Model\obj\Debug\net5.0-windows\Model.AssemblyInfo.cs
+E:\OneDrive\_Projetos\Testes\LiberacaoCredito\Model\obj\Debug\net5.0-windows\Model.csproj.CoreCompileInputs.cache
+E:\OneDrive\_Projetos\Testes\LiberacaoCredito\Model\obj\Debug\net5.0-windows\Model.dll
+E:\OneDrive\_Projetos\Testes\LiberacaoCredito\Model\obj\Debug\net5.0-windows\ref\Model.dll
+E:\OneDrive\_Projetos\Testes\LiberacaoCredito\Model\obj\Debug\net5.0-windows\Model.pdb

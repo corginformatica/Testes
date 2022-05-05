@@ -1,0 +1,11 @@
+E:\OneDrive\_Projetos\Testes\LiberacaoCredito\Controller\bin\Debug\net5.0-windows\Controller.deps.json
+E:\OneDrive\_Projetos\Testes\LiberacaoCredito\Controller\bin\Debug\net5.0-windows\Controller.dll
+E:\OneDrive\_Projetos\Testes\LiberacaoCredito\Controller\bin\Debug\net5.0-windows\ref\Controller.dll
+E:\OneDrive\_Projetos\Testes\LiberacaoCredito\Controller\bin\Debug\net5.0-windows\Controller.pdb
+E:\OneDrive\_Projetos\Testes\LiberacaoCredito\Controller\obj\Debug\net5.0-windows\Controller.GeneratedMSBuildEditorConfig.editorconfig
+E:\OneDrive\_Projetos\Testes\LiberacaoCredito\Controller\obj\Debug\net5.0-windows\Controller.AssemblyInfoInputs.cache
+E:\OneDrive\_Projetos\Testes\LiberacaoCredito\Controller\obj\Debug\net5.0-windows\Controller.AssemblyInfo.cs
+E:\OneDrive\_Projetos\Testes\LiberacaoCredito\Controller\obj\Debug\net5.0-windows\Controller.csproj.CoreCompileInputs.cache
+E:\OneDrive\_Projetos\Testes\LiberacaoCredito\Controller\obj\Debug\net5.0-windows\Controller.dll
+E:\OneDrive\_Projetos\Testes\LiberacaoCredito\Controller\obj\Debug\net5.0-windows\ref\Controller.dll
+E:\OneDrive\_Projetos\Testes\LiberacaoCredito\Controller\obj\Debug\net5.0-windows\Controller.pdb
